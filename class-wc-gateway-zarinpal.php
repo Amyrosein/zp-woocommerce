@@ -355,7 +355,7 @@ function Load_ZarinPal_Gateway() {
 
                 if ( isset( $_GET['Status'] ) && $_GET['Status'] === 'OK' ) {
                     $authority = sanitize_text_field( $_GET['Authority'] );
-                    
+
                     $amount = intval( $order->get_total() );
                     $currency = $order->get_currency();
                     $currency = strtolower( $currency );
